@@ -10,6 +10,7 @@ This is a plugin developed for Kibana 5 that displays a network node that link t
 cd KIBANA_HOME/plugins
 git clone https://github.com/dlumbrer/kbn_network.git network_vis
 cd network_vis
+rm -rf images/
 npm install
 ```
 > **Important:** If you have any problem with the plugin version (like a warning message "**it expected Kibana version "x.x.x", and found "5.0.0"**") only change the value of the "version" tag on the package.json to your Kibana version
@@ -24,8 +25,8 @@ rm -rf plugins/network_vis/
 ## Releases for Kibana 5 and 4
 
 Now this plugin is avalible for differents versions of Kibana, in [releases](https://github.com/dlumbrer/kbn_network/releases "Go to releases!") you can find the source code, ZIPs and TARs of the plugin to use in:
-* [Kibana 5.x] (https://github.com/dlumbrer/kbn_network/releases/tag/Kibana-5.x "Go to source")
-* [Kibana 4.x] (https://github.com/dlumbrer/kbn_network/releases/tag/Kibana-4.x "Go to source")
+* [Kibana 5.x](https://github.com/dlumbrer/kbn_network/releases/tag/Kibana-5.x "Go to source")
+* [Kibana 4.x](https://github.com/dlumbrer/kbn_network/releases/tag/Kibana-4.x "Go to source")
 
 ### Building a Release
 Building a release only means packaging the plugin with all its dependencies into a zip archive. Important is to put the plugin in a folder called kibana before zipping it.
